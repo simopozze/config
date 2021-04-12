@@ -16,19 +16,21 @@ noremap K 10k
 noremap L 10l
 noremap H 10h
 
-noremap F :!pdflatex % && mupdf main.pdf<CR><CR>
+"latex
+noremap F :!pdflatex % <CR><CR>
+
+"ui
 set number
 set autoindent
 set cursorline
 syntax on
-
-"set colorcolumn=80
 set wildmenu
 set encoding=utf-8
 filetype plugin indent on
 syntax on
 set clipboard=unnamed
+
+"color
 colorscheme tender
 set t_Co=256
 
-"robe
