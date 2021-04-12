@@ -17,7 +17,7 @@ noremap L 10l
 noremap H 10h
 
 "latex
-noremap F :!pdflatex % <CR><CR>
+noremap F :!pdflatex % && mupdf main.pdf<CR><CR>
 
 "ui
 set number
