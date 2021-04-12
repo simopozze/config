@@ -15,6 +15,8 @@ noremap J 10j
 noremap K 10k
 noremap L 10l
 noremap H 10h
+noremap ss :w!<CR>
+
 
 "latex
 noremap F :!pdflatex % && mupdf main.pdf<CR><CR>
