@@ -21,6 +21,7 @@ set number
 set autoindent
 set cursorline
 syntax on
+
 "set colorcolumn=80
 set wildmenu
 set encoding=utf-8
@@ -30,3 +31,4 @@ set clipboard=unnamed
 colorscheme tender
 set t_Co=256
 
+"robe
