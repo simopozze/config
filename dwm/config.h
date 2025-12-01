@@ -10,7 +10,7 @@ static const char *fonts[]          = { "Iosevka NFM:size=13" };
 static const char dmenufont[]       = "Iosevka NFM:size=13";
 
 // Colors
-static const char col_gray_light[]  = "#2d2a2e";
+static const char col_gray_light[]  = "#fcfcfa";
 static const char col_gray_dark[]   = "#221f22";
 static const char col_special[]     = "#fc9867";
 
@@ -59,7 +59,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]  = 
 {
-	  "rofi", "-show", "drun", "-font", "Iosevka NFM", "12", "-icon-theme", "Papirus", "-show-icons", NULL 
+	  "dmenu_run", "-l", "5", "-fn", "Iosevka NF:pixelsize=14", "-sb", "#fc9867", "-sf", "#000000", NULL 
 }; 
 
 static const char *browser[]    = { "firefox", NULL };
