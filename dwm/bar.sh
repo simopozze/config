@@ -24,6 +24,6 @@ while true; do
 
 	BRIGHTNESS="$BRIGHTNESS_ICON $(xrandr --verbose | grep Brightness | awk '{print $2}')"
 
-	xsetroot -solid "#6272a4" -name " $CLOCK - $DATE $DISK" 
+	xsetroot -name " $CLOCK - $DATE $DISK" 
 	sleep 1
 done &
