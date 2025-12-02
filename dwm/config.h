@@ -59,7 +59,8 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]  = 
 {
-	  "dmenu_run", "-l", "5", "-fn", "Iosevka NF:pixelsize=14", "-sb", "#fc9867", "-sf", "#000000", NULL 
+	  /* "dmenu_run", "-l", "5", "-fn", "Iosevka NF:pixelsize=14", "-sb", "#fc9867", "-sf", "#000000", NULL */ 
+	"rofi", "-show", "drun",  NULL
 }; 
 
 static const char *browser[]    = { "firefox", NULL };
