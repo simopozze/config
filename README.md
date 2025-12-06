@@ -10,6 +10,7 @@
 
 # CHANGELOG
 
+ - _Sat Dec  6 09:01:42 PM CET 2025_: **Added NAS storage information (% used) in bar.sh.**
  - _Tue Dec  2 08:08:30 PM CET 2025_: **Re-added rofi folder.**
  - _Mon Dec  1 08:37:01 PM CET 2025_: **Removed rofi folder. Fixed ugly color for DWM. Added dmenu_run instead of Rofi for ALT_A on DWM**
  - _Mon Dec  1 14:41:26 CET 2025_: **Cleaned dwm folder**

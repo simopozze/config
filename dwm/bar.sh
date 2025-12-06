@@ -14,7 +14,8 @@ while true; do
 
 	CLOCK="$CLOCK_ICON $(date +"%H:%M:%S")"
 	DATE="$DATE_ICON $(date +"%d/%m/%y")"
-	DISK="$DISK_ICON $(df /dev/nvme0n1p3 | grep / | awk '{print $5}')"
+	DISK="$DISK_ICON [/ $(df /dev/nvme0n1p3 | grep / | awk '{print $5}')]"
+	NAS="$DISK_ICON [/NAS $(df /dev/sda1 | grep / | awk '{print $5}')]"
     
 	bat_value=$(acpi -b | awk '{print $4}')
 	BATTERY="$BATTERY_ICON $(echo $bat_value | sed 's/,//g')"
@@ -25,6 +26,6 @@ while true; do
 	BRIGHTNESS="$BRIGHTNESS_ICON $(xrandr --verbose | grep Brightness | awk '{print $2}')"
 
 	#xsetroot -solid "#6272a4" -name " $CLOCK - $DATE $DISK" 
-	xsetroot -name " $CLOCK - $DATE $DISK" 
+	xsetroot -name " $CLOCK - $DATE $DISK $NAS " 
 	sleep 1
 done &
